@@ -84,7 +84,7 @@ function crearMensajeHTML(mensaje, personaje, lat, lng, foto) {
 
 
         <div class="avatar">
-            <img src="img/avatars/${ personaje }.jpg">
+            <img src="img/avatars/${ personaje }.jpg" width="140" height="140" decoding="async" alt="${ personaje }">
         </div>
         <div class="bubble-container">
             <div class="bubble">
@@ -96,7 +96,7 @@ function crearMensajeHTML(mensaje, personaje, lat, lng, foto) {
     if ( foto ) {
         content += `
                 <br>
-                <img class="foto-mensaje" src="${ foto }">
+                <img class="foto-mensaje" src="${ foto }" width="150" height="150" decoding="async" alt="foto">
         `;
     }
         
@@ -134,7 +134,7 @@ function crearMensajeMapa(lat, lng, personaje) {
         data-lat="${ lat }"
         data-lng="${ lng }">
                 <div class="avatar">
-                    <img src="img/avatars/${ personaje }.jpg">
+                    <img src="img/avatars/${ personaje }.jpg" width="140" height="140" decoding="async" alt="${ personaje }">
                 </div>
                 <div class="bubble-container">
                     <div class="bubble">
